@@ -1,0 +1,22 @@
+:root {
+  /* COLORS */
+  --color-100: #000000;
+  --color-200: #382843;
+  --color-300: #7c6d80;
+  --color-400: #c7c6c6;
+
+  /* SPACING */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* FONTS */
+  --font-family-retro: "Monogram", monospace;
+  --font-family-text: "Inter", system-ui, sans-serif;
+
+  --font-weight-bold: 900;
+  --font-weight-regular: 400;
+  --font-weight-thin: 200;
+}
