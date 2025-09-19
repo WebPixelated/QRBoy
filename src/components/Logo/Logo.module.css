@@ -1,0 +1,5 @@
+.logo h2 {
+  font-family: var(--font-family-retro);
+  line-height: 1;
+  font-size: 2rem;
+}
