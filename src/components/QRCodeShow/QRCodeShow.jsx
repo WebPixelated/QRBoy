@@ -1,13 +1,9 @@
-import QRCode from "react-qr-code";
+import QRBoy from "../QRBoy/QRBoy";
 
 function QRCodeShow({ query }) {
   return (
-    <div>
-      <QRCode
-        size={512}
-        value={query}
-        style={{ height: "128px", width: "128px" }}
-      />
+    <div style={{ marginLeft: "-16px" }}>
+      <QRBoy query={query} />
     </div>
   );
 }

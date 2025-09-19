@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" style="--color-100: #000000; --color-400: #c7c6c6;">
+  <!-- Main Device Body -->
+  <rect x="4" y="4" width="56" height="72" rx="4" 
+        fill="var(--color-400)" stroke="var(--color-100)" stroke-width="2"/>
+  
+  <!-- Screen -->
+  <rect x="12" y="12" width="40" height="32" rx="2"
+        fill="var(--color-100)" stroke="var(--color-100)" stroke-width="1"/>
+  
+  <!-- QR Code Placeholder -->
+  <!-- Top left corner -->
+  <rect x="16" y="16" width="8" height="8" fill="var(--color-400)"/>
+  <rect x="18" y="18" width="4" height="4" fill="var(--color-100)"/>
+  
+  <!-- Top right corner -->
+  <rect x="40" y="16" width="8" height="8" fill="var(--color-400)"/>
+  <rect x="42" y="18" width="4" height="4" fill="var(--color-100)"/>
+  
+  <!-- Bottom left corner -->
+  <rect x="16" y="32" width="8" height="8" fill="var(--color-400)"/>
+  <rect x="18" y="34" width="4" height="4" fill="var(--color-100)"/>
+  
+  <!-- Center pattern -->
+  <rect x="30" y="26" width="4" height="4" fill="var(--color-400)"/>
+  <rect x="31" y="27" width="2" height="2" fill="var(--color-100)"/>
+  
+  <!-- D-pad -->
+  <g transform="translate(20,54)">
+    <rect x="-6" y="2" width="12" height="4" rx="1" fill="var(--color-100)"/>
+    <rect x="-2" y="-1.75" width="4" height="12" rx="1" fill="var(--color-100)"/>
+  </g>
+  
+  <!-- Action Buttons -->
+  <circle cx="42" cy="60" r="4" fill="var(--color-100)"/>
+  <circle cx="50" cy="56" r="4" fill="var(--color-100)"/>
+</svg>

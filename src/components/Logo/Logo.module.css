@@ -1,3 +1,19 @@
+.logo {
+  color: var(--color-400);
+  text-decoration: none;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--spacing-sm);
+  transition: 0.15s transform;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-svg {
+  width: 32px;
+}
+
 .logo h2 {
   font-family: var(--font-family-retro);
   line-height: 1;
