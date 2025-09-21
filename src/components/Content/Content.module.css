@@ -2,13 +2,13 @@
   width: 60%;
   display: grid;
   align-items: center;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 5fr 4fr;
 }
 
 .qr-container {
   color: var(--color-100);
-  padding: var(--spacing-lg);
-  /* padding-right: var(--spacing-xl); */
+  padding: var(--spacing-md);
+  padding-right: 48px;
   background-color: var(--color-400);
   border: var(--spacing-sm) solid var(--color-200);
   border-right: none;
@@ -27,4 +27,23 @@
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--spacing-sm);
   resize: none;
+}
+
+.export-as {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--spacing-xs);
+}
+
+.export-as-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--spacing-sm);
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -19px;
 }

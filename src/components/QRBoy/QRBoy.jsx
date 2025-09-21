@@ -1,6 +1,8 @@
 import QRCode from "react-qr-code";
 
-function QRBoy({ query }) {
+function QRBoy({ query, ref }) {
+  const svgRef = ref;
+
   const screenSize = 32;
   const screenX = 33.5;
   const screenY = 12.25;
@@ -8,6 +10,7 @@ function QRBoy({ query }) {
 
   return (
     <svg
+      ref={svgRef}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="18 -1 63.2 91.6"
       style={{
@@ -52,21 +55,35 @@ function QRBoy({ query }) {
             size={qrSize}
             x={screenX + (screenSize - qrSize) / 2}
             y={screenY + (screenSize - qrSize) / 2}
-            fgColor="var(--color-400"
+            fgColor="var(--color-400)"
             bgColor="transparent"
           />
         ) : (
-          <text
-            x="49.5"
-            y="30"
-            textAnchor="middle"
-            fill="var(--color-400)"
-            fontFamily="monogram"
-            fontSize="8"
-            lineHeight="1"
-          >
-            [QR CODE]
-          </text>
+          <g>
+            {/* Darkening */}
+            <rect
+              x={screenX + 2}
+              y={screenY + 2}
+              width={screenSize - 4}
+              height={screenSize - 4}
+              fill="var(--color-300)"
+              opacity="0.3"
+              rx="1"
+            />
+
+            {/* Scan Lines */}
+            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
+              <rect
+                key={i}
+                x={screenX + 1}
+                y={screenY + 2 + i * 3}
+                width={screenSize - 2}
+                height="1"
+                fill="var(--color-400)"
+                opacity="0.4"
+              />
+            ))}
+          </g>
         )}
       </g>
 
@@ -79,7 +96,7 @@ function QRBoy({ query }) {
       />
 
       {/* D-pad */}
-      <g transform="translate(30,60)">
+      <g transform="translate(30,58)">
         {/* Horizontal */}
         <rect
           x="-3.75"
@@ -107,7 +124,7 @@ function QRBoy({ query }) {
       {/* A/B Buttons */}
       <circle
         cx="60.95"
-        cy="67.5"
+        cy="66"
         r="3.575"
         fill="var(--color-300)"
         stroke="var(--color-200)"
@@ -115,7 +132,7 @@ function QRBoy({ query }) {
       />
       <circle
         cx="70.75"
-        cy="63"
+        cy="61"
         r="3.575"
         fill="var(--color-300)"
         stroke="var(--color-200)"
@@ -127,20 +144,6 @@ function QRBoy({ query }) {
         <rect x="40.5" y="80" width="6" height="2" rx="1" />
         <rect x="50.5" y="80" width="6" height="2" rx="1" />
       </g>
-
-      {/* QRBoy Text */}
-      <text
-        x="32"
-        y="52"
-        textAnchor="middle"
-        fill="var(--color-200)"
-        fontFamily="monogram"
-        fontSize="7"
-        fontWeight="bold"
-        lineHeight="1"
-      >
-        QRBoy
-      </text>
     </svg>
   );
 }

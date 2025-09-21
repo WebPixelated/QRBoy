@@ -1,0 +1,14 @@
+.button {
+  font-family: var(--font-family-text);
+  color: var(--color-400);
+  padding: var(--spacing-xs);
+  border: 2px solid var(--color-400);
+  border-radius: var(--spacing-sm);
+  background-color: var(--color-100);
+  transition: 0.15s background-color, 0.15s transform;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: var(--color-200);
+  transform: scale(1.05);
+}

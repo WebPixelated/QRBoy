@@ -3,5 +3,5 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-lg);
 }
