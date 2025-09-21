@@ -19,29 +19,7 @@
   gap: var(--spacing-md);
 }
 
-.qr-container textarea {
-  height: 8rem;
-  background-color: var(--color-100);
-  color: var(--color-400);
-  border: none;
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--spacing-sm);
-  resize: none;
-}
-
-.export-as {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: var(--spacing-xs);
-}
-
-.export-as-buttons {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: var(--spacing-sm);
-}
-
-.right {
+.qr-show {
   display: flex;
   justify-content: center;
   align-items: center;

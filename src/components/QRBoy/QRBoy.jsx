@@ -1,6 +1,10 @@
 import QRCode from "react-qr-code";
+import { usePalette } from "../../context/PaletteContext";
+// import classes from "./QRBoy.module.css";
 
 function QRBoy({ query, ref }) {
+  const { currentPalette } = usePalette();
+
   const svgRef = ref;
 
   const screenSize = 32;
@@ -14,10 +18,10 @@ function QRBoy({ query, ref }) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="18 -1 63.2 91.6"
       style={{
-        "--color-100": "#000000",
-        "--color-200": "#382843",
-        "--color-300": "#7c6d80",
-        "--color-400": "#c7c6c6",
+        "--color-100": currentPalette.colors["--color-100"],
+        "--color-200": currentPalette.colors["--color-200"],
+        "--color-300": currentPalette.colors["--color-300"],
+        "--color-400": currentPalette.colors["--color-400"],
       }}
     >
       {/* Outer Frame */}

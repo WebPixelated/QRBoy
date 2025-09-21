@@ -1,0 +1,11 @@
+.qr-export {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--spacing-xs);
+}
+
+.qr-export-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--spacing-sm);
+}

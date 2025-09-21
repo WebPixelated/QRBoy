@@ -1,0 +1,57 @@
+.palette-selector {
+  position: relative;
+}
+
+.palette-button-show {
+  border: none;
+  border-bottom: 2px solid var(--color-400);
+  /* background-color: var(--color-400); */
+  background-color: transparent;
+  color: var(--color-400);
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+.palette-button-show:hover,
+.palette-active {
+  border-width: 4px;
+}
+
+.palette-content {
+  right: 0;
+  top: 100%;
+  margin-top: var(--spacing-sm);
+  position: absolute;
+  background-color: var(--color-100);
+  min-width: 220px;
+  max-width: 280px;
+  box-shadow: 0px 8px 16px 0px var(--color-palette-selector);
+  padding: var(--spacing-sm);
+}
+
+.palette-button {
+  width: 100%;
+  padding: var(--spacing-xs);
+  display: flex;
+  flex-flow: row nowrap;
+  border: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  color: var(--color-button-text);
+  background-color: var(--color-button);
+}
+.palette-button:hover {
+  background-color: var(--color-button-hover);
+}
+.palette-button-active {
+  background-color: var(--color-button-active);
+}
+
+.palette-colors {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.palette-color {
+  width: 18px;
+  height: 18px;
+}
