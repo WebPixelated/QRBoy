@@ -1,12 +1,59 @@
-# React + Vite
+# QRBoy: Retro QR Code Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**QRBoy** is an interactive web application that generates QR codes within a retro handheld console-style frame.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Instant QR Code Generation:** Type any text or URL into the input field and watch the QR code generate in real-time.
+- **Retro Handheld Aesthetic:** The QR code is displayed within a meticulously designed SVG that resembles a classic Game Boy, creating a unique and fun user experience.
+- **Customizable Color Palettes:** Choose from a selection of curated 4-color palettes to customize the look of your QRBoy. The "Default" palette is applied on startup, but you can explore other themes inspired by retro gaming.
+- **Export in SVG & PNG:** Download your generated QRBoy as a high-quality, scalable SVG or a web-ready PNG file, perfect for both digital and print use.
 
-## Expanding the ESLint configuration
+## Screenshot
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Project Screenshot](./image.png)
+
+## Built With
+
+- [React](https://reactjs.org/)
+- [Vite](https://vite.dev/)
+- [CSS Modules](https://github.com/css-modules/css-modules)
+- [Vitest & React Testing Library](https://vitest.dev/)
+- [React-qr-code](https://github.com/rosskhanas/react-qr-code)
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/WildPX/qrboy.git
+```
+
+2. Navigate to project repository:
+
+```bash
+cd qrboy
+```
+
+3. Install the dependencies:
+
+```bash
+npm install
+```
+
+4. Run the application:
+
+```bash
+npm run dev
+```
+
+5. Open `http://localhost:5173` in browser.
+
+## Links
+
+- Project URL: [QRBoy](https://github.com/WildPX/QRBoy)
+- Live Website URL: [Website]()
+
+## Acknowledgments
+
+- The color palettes used in this project are sourced from [Lospec](https://lospec.com/).
