@@ -1,5 +1,16 @@
 export const palettes = [
   {
+    id: "default",
+    name: "Default",
+    author: "none",
+    colors: {
+      "--color-100": "#2C2C2C",
+      "--color-200": "#8B1538",
+      "--color-300": "#8e9f5b",
+      "--color-400": "#E8E8E8",
+    },
+  },
+  {
     id: "2bit_demiboy",
     name: "2Bit Demiboy",
     author: "Space Sandwich",
