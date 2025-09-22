@@ -37,30 +37,38 @@ function QRExport({ qrBoyRef }) {
     if (!qrBoyRef.current) return;
 
     try {
+      // Serialize SVG element
       const svgElement = qrBoyRef.current;
       const svgData = new XMLSerializer().serializeToString(svgElement);
 
+      // Get width and height of SVG
       const viewBox = svgElement.getAttribute("viewBox");
       const [, , viewWidth, viewHeight] = viewBox.split(" ").map(Number);
 
+      // Target 1000px height for PNG, considering aspect ratio
       const targetHeight = 1000;
       const aspectRatio = viewWidth / viewHeight;
       const targetWidth = Math.round(targetHeight * aspectRatio);
 
+      // Create canvas for rendering
       const canvas = document.createElement("canvas");
       const ctx = canvas.getContext("2d");
 
+      // Set width and height of canvas as calculated ones
       canvas.width = targetWidth;
       canvas.height = targetHeight;
 
+      // Create a promise for drawing on canvas and downloading the result
       return new Promise((resolve, reject) => {
         const img = new Image();
 
         img.onload = () => {
+          // Try to draw an image
           try {
             ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
             URL.revokeObjectURL(img.src); // Clean up the object URL
 
+            // If blob created, download it as an image
             canvas.toBlob(
               (blob) => {
                 if (blob) {

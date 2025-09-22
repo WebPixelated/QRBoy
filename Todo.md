@@ -10,7 +10,8 @@ A playful web app that generates QR codes inside a Game-Boy-style SVG frame with
 - ✅Basic HTML/CSS layout
 - ✅Core QR code generation
 - ✅Game Boy–style SVG frame
-- Color-palette selector
+- ✅Color-palette selector
+- ✅Simple export options (SVG/PNG)
 - Responsive layout for mobile/tablet
 
 ---

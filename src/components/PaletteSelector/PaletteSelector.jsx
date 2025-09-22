@@ -24,7 +24,7 @@ function PaletteSelector() {
   return (
     <div className={classes.paletteSelector} ref={wrapperRef}>
       <button
-        className={`${classes.paletteButtonShow} ${
+        className={`${classes.paletteToggle} ${
           open ? classes.paletteActive : ""
         }`}
         type="button"
@@ -38,13 +38,16 @@ function PaletteSelector() {
             <button
               key={palette.id}
               onClick={() => changePalette(palette.id)}
-              className={`${classes.paletteButton} ${
+              className={`${classes.paletteContentButton} ${
                 currentPalette.id === palette.id
-                  ? classes.paletteButtonActive
+                  ? classes.paletteContentButtonActive
                   : ""
               }`}
             >
-              {palette.name}
+              <div className={classes.paletteNameContainer}>
+                <p>{palette.name}</p>
+                {palette.author && <span>{palette.author}</span>}
+              </div>
               <div className={classes.paletteColors}>
                 {Object.values(palette.colors).map((color) => (
                   <div

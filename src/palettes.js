@@ -2,7 +2,6 @@ export const palettes = [
   {
     id: "default",
     name: "Default",
-    author: "none",
     colors: {
       "--color-100": "#2C2C2C",
       "--color-200": "#8B1538",

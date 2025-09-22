@@ -13,11 +13,11 @@
 }
 
 .logo-svg {
-  width: 32px;
+  width: clamp(18px, 2.5vw, 32px);
 }
 
 .logo h2 {
   font-family: var(--font-family-retro);
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   line-height: 1.1;
 }

@@ -1,8 +1,10 @@
 .main {
-  width: 60%;
+  width: 60vw;
   display: grid;
   align-items: center;
   grid-template-columns: 5fr 4fr;
+  grid-template-rows: auto;
+  flex-grow: 1;
 }
 
 .qr-container {
@@ -23,5 +25,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -19px;
+  margin-left: -34px;
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    place-content: center;
+    grid-template-columns: none;
+    grid-template-rows: auto 1fr;
+    gap: 0px;
+  }
+
+  .qr-container {
+    width: 85vw;
+    padding: 0.75rem;
+    border-top-right-radius: var(--spacing-md);
+    border-bottom-left-radius: 0px;
+    border: var(--spacing-sm) solid var(--color-200);
+    border-bottom: none;
+    padding-bottom: 40px;
+    justify-self: center;
+  }
+
+  .qr-show {
+    width: 90vw;
+    margin-top: -28px;
+    margin-left: 0px;
+  }
 }

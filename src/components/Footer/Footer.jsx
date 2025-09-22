@@ -3,7 +3,21 @@ import classes from "./Footer.module.css";
 function Footer() {
   return (
     <footer className={classes.footer}>
-      <p>Made by WildPX. Palettes from Lospec.</p>
+      <p>
+        Made by{" "}
+        <a
+          href="https://github.com/WildPX"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WildPX
+        </a>
+        . Palettes from{" "}
+        <a href="https://lospec.com/" target="_blank" rel="noopener noreferrer">
+          Lospec
+        </a>
+        .
+      </p>
     </footer>
   );
 }

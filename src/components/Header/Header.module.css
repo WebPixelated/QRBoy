@@ -1,5 +1,5 @@
 .header {
-  width: 60%;
+  width: clamp(600px, 60vw, 1200px);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -10,4 +10,10 @@
   border-top: none;
   border-bottom-left-radius: var(--spacing-lg);
   border-bottom-right-radius: var(--spacing-lg);
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    width: 90vw;
+  }
 }
