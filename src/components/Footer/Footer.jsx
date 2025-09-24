@@ -10,7 +10,7 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          WildPX
+          WebPixelated
         </a>
         . Palettes from{" "}
         <a href="https://lospec.com/" target="_blank" rel="noopener noreferrer">
