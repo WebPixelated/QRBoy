@@ -6,7 +6,7 @@ function Footer() {
       <p>
         Made by{" "}
         <a
-          href="https://github.com/WildPX"
+          href="https://github.com/WebPixelated"
           target="_blank"
           rel="noopener noreferrer"
         >
