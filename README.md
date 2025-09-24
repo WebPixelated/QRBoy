@@ -26,7 +26,7 @@
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/WildPX/qrboy.git
+git clone https://github.com/WebPixelated/qrboy.git
 ```
 
 2. Navigate to project repository:
