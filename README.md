@@ -51,7 +51,7 @@ npm run dev
 
 ## Links
 
-- Project URL: [QRBoy](https://github.com/WildPX/QRBoy)
+- Project URL: [QRBoy](https://github.com/WebPixelated/QRBoy)
 - Live Website URL: [Website](https://qrboy.netlify.app/)
 
 ## Acknowledgments
